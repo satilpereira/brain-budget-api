@@ -19,7 +19,6 @@ commit_parser = "conventional"
 logging_use_named_masks = false
 major_on_zero = true
 allow_zero_version = false
-repo_dir = "/home/satil/Projects/personal/brain-budget-api"
 no_git_verify = false
 tag_format = "v{version}"
 add_partial_tags = false
@@ -38,7 +37,6 @@ insertion_flag = "<!-- version list -->"
 template_dir = "templates"
 
 [tool.semantic_release.changelog.default_templates]
-changelog_file = "CHANGELOG.md"
 output_format = "md"
 mask_initial_release = true
 
