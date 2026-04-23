@@ -33,13 +33,8 @@ jobs:
         run: |
           pip install python-semantic-release
 
-      - name: Check CLI binding
-        run: |
-          which semantic-release
-          semantic-release --help
-
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOG_LEVEL: debug
-        run: python -m semantic_release version --print
+        run: python -m semantic_release version && python -m semantic_release publish
